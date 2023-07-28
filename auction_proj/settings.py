@@ -27,7 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-# AUTH_USER_MODEL = "auction.MyUser"
+AUTH_USER_MODEL = "auction.MyUser"
 
 
 # Application definition
