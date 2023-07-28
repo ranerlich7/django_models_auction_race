@@ -16,7 +16,7 @@ class Collector(models.Model):
 class ArtPiece(models.Model):
     name = models.CharField(max_length=100, null=False)
     # one collector for this artpice. Foreign key .
-    collector = models.ForeignKey(Collector, on_delete=models.CASCADE)
+    collector = models.ForeignKey(Collector, on_delete=models.CASCADE, null=True)
     
     def __str__(self):
         return f"{self.name} - {self.id}"
